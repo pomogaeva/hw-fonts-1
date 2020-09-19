@@ -1,0 +1,84 @@
+* {
+  box-sizing: border-box;
+}
+
+html, body, p, h1, blockquote {
+  margin: 0;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  background-color: #fff;
+  color: #7a7a7a;
+}
+
+article {
+  margin: 11% 7%;
+  padding: 13% 8.5%;
+  box-shadow: 10px 10px 40px #fafafa, -10px -10px 40px #fafafa;
+}
+
+.title {
+  margin-left: 30px;
+  font-family: 'Playfair Display', serif;
+  font-size: 42px;
+  color: black;
+  text-transform: capitalize;
+  font-weight: 400;
+}
+
+p.first:first-letter {
+  padding: 0;
+  margin-right: 0.5rem;
+  float: left;
+  display: inline-block;
+  vertical-align: text-top;
+  font-family: 'Playfair Display', serif;
+  font-size: 110px;
+  font-weight: normal;
+  color: #000;
+  line-height: 0.8;
+}
+
+p {
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 2;
+  margin: 30px;
+}
+
+.quotation {
+  padding-left: 50px;
+  font-size: 24px;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.quotation::before {
+  content: "\201C";
+  display: block;
+  font-size: 80px;
+  left: -50px;
+  top: -70px;
+  position: relative;
+  height: 0;
+}
+
+button {
+  width: 260px;
+  height: 70px;
+  margin-left: 30px;
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 6px;
+  color: #eaa258;
+  border: 2px solid #eaa258;
+  background-color: #fff;
+}
+
+button:hover {
+  background-color: #eaa258;
+  color: #fff;
+  cursor: pointer;
+}
