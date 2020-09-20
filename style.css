@@ -27,12 +27,11 @@ article {
   font-weight: 400;
 }
 
-p.first:first-letter {
+p:first-of-type:first-letter {
   padding: 0;
   margin-right: 0.5rem;
   float: left;
-  display: inline-block;
-  vertical-align: text-top;
+  display: block;
   font-family: 'Playfair Display', serif;
   font-size: 110px;
   font-weight: normal;
@@ -45,6 +44,10 @@ p {
   font-weight: 300;
   line-height: 2;
   margin: 30px;
+}
+
+p + * {
+  clear: left;
 }
 
 .quotation {
